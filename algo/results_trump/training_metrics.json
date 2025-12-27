@@ -1,5 +1,5 @@
 {
-  "trained_at": "2025-12-27T03:23:11.105744",
+  "trained_at": "2025-12-27T03:47:22.657986",
   "dataset": "post_trump",
   "data_period": {
     "train_start": "2024-11-05T15:00:00",
@@ -15,12 +15,12 @@
     "learning_rate": 0.1
   },
   "cv_results": {
-    "avg_train_mae": 99.40462115048531,
-    "avg_val_mae": 477.05730709876525,
-    "avg_train_r2": 0.31286072557816474,
-    "avg_val_r2": -3.50575282163675,
-    "train_mae_std": 124.66272476676605,
-    "val_mae_std": 199.55300229137495
+    "avg_train_mae": 108.98996896730755,
+    "avg_val_mae": 487.0670100308641,
+    "avg_train_r2": 0.2940099198120943,
+    "avg_val_r2": -3.676051196365924,
+    "train_mae_std": 136.62749286338354,
+    "val_mae_std": 209.80383878467376
   },
   "feature_names": [
     "tda_l1",

@@ -1,0 +1,34 @@
+{
+  "backtest_date": "2025-12-27T03:48:24.464774",
+  "dataset": "trump_30days",
+  "test_period": {
+    "start": "2024-11-05T15:00:00",
+    "end": "2024-12-05T15:00:00",
+    "num_candles": 8641,
+    "num_days": 30
+  },
+  "performance": {
+    "initial_capital": 10000.0,
+    "final_equity": 11937.002381006245,
+    "total_return": 19.37002381006245,
+    "max_drawdown": 17.167573906122886,
+    "sharpe_ratio": 3.4459907061331596
+  },
+  "trading_stats": {
+    "total_trades": 51,
+    "winning_trades": 32,
+    "losing_trades": 19,
+    "win_rate": 62.745098039215684,
+    "max_consecutive_losses": 4
+  },
+  "config": {
+    "leverage": 1,
+    "entry_threshold_long": 0.3,
+    "entry_threshold_short": -0.3,
+    "stop_loss_pct": 2.0,
+    "take_profit_pct": 3.0,
+    "maker_fee": 0.0002,
+    "taker_fee": 0.0004,
+    "slippage_pct": 0.01
+  }
+}
