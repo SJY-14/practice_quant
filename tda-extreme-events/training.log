@@ -1,0 +1,268 @@
+================================================================================
+BITCOIN PRICE PREDICTION - TDA + MACHINE LEARNING
+================================================================================
+📊 Loading data...
+  Loaded 105121 rows
+  Date range: 2024-12-26 02:05:00 to 2025-12-26 02:00:00
+  Columns: ['open_time', 'open_futures', 'high_futures', 'low_futures', 'close_futures', 'volume_futures', 'buy_volume_futures', 'sell_volume_futures', 'volume_delta_futures', 'cvd_futures', 'open_interest_futures', 'open_spot', 'high_spot', 'low_spot', 'close_spot', 'volume_spot', 'buy_volume_spot', 'sell_volume_spot', 'volume_delta_spot', 'cvd_spot']
+
+🔬 Extracting TDA features...
+  Computing persistence diagrams...
+Computing TDA for 105062 windows...
+  Window 0/105062
+  Window 500/105062
+  Window 1000/105062
+  Window 1500/105062
+  Window 2000/105062
+  Window 2500/105062
+  Window 3000/105062
+  Window 3500/105062
+  Window 4000/105062
+  Window 4500/105062
+  Window 5000/105062
+  Window 5500/105062
+  Window 6000/105062
+  Window 6500/105062
+  Window 7000/105062
+  Window 7500/105062
+  Window 8000/105062
+  Window 8500/105062
+  Window 9000/105062
+  Window 9500/105062
+  Window 10000/105062
+  Window 10500/105062
+  Window 11000/105062
+  Window 11500/105062
+  Window 12000/105062
+  Window 12500/105062
+  Window 13000/105062
+  Window 13500/105062
+  Window 14000/105062
+  Window 14500/105062
+  Window 15000/105062
+  Window 15500/105062
+  Window 16000/105062
+  Window 16500/105062
+  Window 17000/105062
+  Window 17500/105062
+  Window 18000/105062
+  Window 18500/105062
+  Window 19000/105062
+  Window 19500/105062
+  Window 20000/105062
+  Window 20500/105062
+  Window 21000/105062
+  Window 21500/105062
+  Window 22000/105062
+  Window 22500/105062
+  Window 23000/105062
+  Window 23500/105062
+  Window 24000/105062
+  Window 24500/105062
+  Window 25000/105062
+  Window 25500/105062
+  Window 26000/105062
+  Window 26500/105062
+  Window 27000/105062
+  Window 27500/105062
+  Window 28000/105062
+  Window 28500/105062
+  Window 29000/105062
+  Window 29500/105062
+  Window 30000/105062
+  Window 30500/105062
+  Window 31000/105062
+  Window 31500/105062
+  Window 32000/105062
+  Window 32500/105062
+  Window 33000/105062
+  Window 33500/105062
+  Window 34000/105062
+  Window 34500/105062
+  Window 35000/105062
+  Window 35500/105062
+  Window 36000/105062
+  Window 36500/105062
+  Window 37000/105062
+  Window 37500/105062
+  Window 38000/105062
+  Window 38500/105062
+  Window 39000/105062
+  Window 39500/105062
+  Window 40000/105062
+  Window 40500/105062
+  Window 41000/105062
+  Window 41500/105062
+  Window 42000/105062
+  Window 42500/105062
+  Window 43000/105062
+  Window 43500/105062
+  Window 44000/105062
+  Window 44500/105062
+  Window 45000/105062
+  Window 45500/105062
+  Window 46000/105062
+  Window 46500/105062
+  Window 47000/105062
+  Window 47500/105062
+  Window 48000/105062
+  Window 48500/105062
+  Window 49000/105062
+  Window 49500/105062
+  Window 50000/105062
+  Window 50500/105062
+  Window 51000/105062
+  Window 51500/105062
+  Window 52000/105062
+  Window 52500/105062
+  Window 53000/105062
+  Window 53500/105062
+  Window 54000/105062
+  Window 54500/105062
+  Window 55000/105062
+  Window 55500/105062
+  Window 56000/105062
+  Window 56500/105062
+  Window 57000/105062
+  Window 57500/105062
+  Window 58000/105062
+  Window 58500/105062
+  Window 59000/105062
+  Window 59500/105062
+  Window 60000/105062
+  Window 60500/105062
+  Window 61000/105062
+  Window 61500/105062
+  Window 62000/105062
+  Window 62500/105062
+  Window 63000/105062
+  Window 63500/105062
+  Window 64000/105062
+  Window 64500/105062
+  Window 65000/105062
+  Window 65500/105062
+  Window 66000/105062
+  Window 66500/105062
+  Window 67000/105062
+  Window 67500/105062
+  Window 68000/105062
+  Window 68500/105062
+  Window 69000/105062
+  Window 69500/105062
+  Window 70000/105062
+  Window 70500/105062
+  Window 71000/105062
+  Window 71500/105062
+  Window 72000/105062
+  Window 72500/105062
+  Window 73000/105062
+  Window 73500/105062
+  Window 74000/105062
+  Window 74500/105062
+  Window 75000/105062
+  Window 75500/105062
+  Window 76000/105062
+  Window 76500/105062
+  Window 77000/105062
+  Window 77500/105062
+  Window 78000/105062
+  Window 78500/105062
+  Window 79000/105062
+  Window 79500/105062
+  Window 80000/105062
+  Window 80500/105062
+  Window 81000/105062
+  Window 81500/105062
+  Window 82000/105062
+  Window 82500/105062
+  Window 83000/105062
+  Window 83500/105062
+  Window 84000/105062
+  Window 84500/105062
+  Window 85000/105062
+  Window 85500/105062
+  Window 86000/105062
+  Window 86500/105062
+  Window 87000/105062
+  Window 87500/105062
+  Window 88000/105062
+  Window 88500/105062
+  Window 89000/105062
+  Window 89500/105062
+  Window 90000/105062
+  Window 90500/105062
+  Window 91000/105062
+  Window 91500/105062
+  Window 92000/105062
+  Window 92500/105062
+  Window 93000/105062
+  Window 93500/105062
+  Window 94000/105062
+  Window 94500/105062
+  Window 95000/105062
+  Window 95500/105062
+  Window 96000/105062
+  Window 96500/105062
+  Window 97000/105062
+  Window 97500/105062
+  Window 98000/105062
+  Window 98500/105062
+  Window 99000/105062
+  Window 99500/105062
+  Window 100000/105062
+  Window 100500/105062
+  Window 101000/105062
+  Window 101500/105062
+  Window 102000/105062
+  Window 102500/105062
+  Window 103000/105062
+  Window 103500/105062
+  Window 104000/105062
+  Window 104500/105062
+  Window 105000/105062
+  Extracted 105062 TDA feature vectors
+
+📈 Creating ML features...
+  Created 39 features for 501 samples
+
+🎯 Preparing ML dataset (predicting 12 steps ahead)...
+  Features: 15
+  Feature names: ['tda_l1', 'tda_l2', 'tda_wd', 'price_spread', 'price_spread_pct', 'return_futures_1', 'return_futures_5', 'return_futures_12', 'return_spot_1', 'volume_ratio']... (showing first 10)
+  Samples: 489
+  Target shape: (489,)
+
+🤖 Training model...
+  Training XGBoost model...
+
+📊 Model Performance:
+  Train MAE: $6.97
+  Test MAE:  $214.20
+  Train RMSE: $11.06
+  Test RMSE:  $268.00
+  Train R²: 0.9988
+  Test R²:  0.5409
+
+🎯 Top 10 Important Features:
+  ma_12: 0.3334
+  ma_24: 0.2744
+  ma_5: 0.1660
+  tda_l2: 0.0572
+  tda_l1: 0.0441
+  return_futures_12: 0.0426
+  volatility_12: 0.0354
+  volatility_5: 0.0102
+  return_futures_5: 0.0102
+  tda_wd: 0.0058
+
+💾 Model saved to: tda_prediction_model.pkl
+
+================================================================================
+✅ TRAINING COMPLETE!
+================================================================================
+
+Model saved: tda_prediction_model.pkl
+Metrics saved: training_metrics.json
+
+Prediction horizon: 60 minutes (12 steps)
+Test MAE: $214.20
+Test R²: 0.5409

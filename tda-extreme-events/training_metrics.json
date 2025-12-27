@@ -1,0 +1,11 @@
+{
+  "train_mae": 6.97076406649629,
+  "test_mae": 214.19759247448977,
+  "train_rmse": 11.061610126927512,
+  "test_rmse": 267.99979844786725,
+  "train_r2": 0.998800491136882,
+  "test_r2": 0.5408544816748879,
+  "forecast_horizon_minutes": 60,
+  "window_size_minutes": 300,
+  "trained_at": "2025-12-27T02:24:34.569900"
+}
