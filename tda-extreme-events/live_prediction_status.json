@@ -1,0 +1,24 @@
+{
+  "timestamp": "2025-12-27T02:26:52.338480",
+  "data_timestamp": "2025-12-26 01:05:00",
+  "current_prices": {
+    "futures": 87231.5,
+    "spot": 87278.87,
+    "timestamp": "2025-12-26 01:05:00"
+  },
+  "prediction": {
+    "current_price": 87231.5,
+    "predicted_price": 87338.828125,
+    "predicted_change": 107.328125,
+    "predicted_change_pct": 0.12303826599336248,
+    "prediction_time": "2025-12-26 02:05:00",
+    "forecast_horizon_minutes": 60,
+    "tda_l1_norm": 0.02770038814556719,
+    "tda_l2_norm": 0.010006450170879953,
+    "tda_wasserstein": 0.0
+  },
+  "validation": {
+    "actual_future_price": 87464.5,
+    "prediction_error": 125.671875
+  }
+}
