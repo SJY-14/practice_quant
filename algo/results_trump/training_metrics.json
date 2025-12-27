@@ -1,0 +1,42 @@
+{
+  "trained_at": "2025-12-27T03:23:11.105744",
+  "dataset": "post_trump",
+  "data_period": {
+    "train_start": "2024-11-05T15:00:00",
+    "train_end": "2025-12-26T18:00:00",
+    "num_samples": 119846,
+    "num_days": 416
+  },
+  "model_config": {
+    "n_folds": 5,
+    "window_size": 60,
+    "n_estimators": 200,
+    "max_depth": 7,
+    "learning_rate": 0.1
+  },
+  "cv_results": {
+    "avg_train_mae": 99.40462115048531,
+    "avg_val_mae": 477.05730709876525,
+    "avg_train_r2": 0.31286072557816474,
+    "avg_val_r2": -3.50575282163675,
+    "train_mae_std": 124.66272476676605,
+    "val_mae_std": 199.55300229137495
+  },
+  "feature_names": [
+    "tda_l1",
+    "tda_l2",
+    "tda_wd",
+    "price_spread",
+    "price_spread_pct",
+    "return_futures_1",
+    "return_futures_5",
+    "return_futures_12",
+    "return_spot_1",
+    "volume_ratio",
+    "ma_5",
+    "ma_12",
+    "ma_24",
+    "volatility_5",
+    "volatility_12"
+  ]
+}

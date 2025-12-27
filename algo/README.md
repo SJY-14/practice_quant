@@ -109,7 +109,7 @@ leverage: 1                  # 레버리지 (기본 1배)
 ```python
 initial_capital: $10,000     # 초기 자본
 maker_fee: 0.02%             # Maker 수수료
-taker_fee: 0.04%             # Taker 수수료
+taker_fee: 0.05%             # Taker 수수료
 slippage_pct: 0.01%          # 슬리피지
 funding_rate: 0.01%          # 펀딩비 (8시간마다)
 ```

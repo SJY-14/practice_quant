@@ -1,0 +1,350 @@
+
+================================================================================
+🚀 TRAINING ON POST-TRUMP DATA
+================================================================================
+Start time: 2025-12-27 03:13:00
+
+================================================================================
+📥 LOADING POST-TRUMP TRAINING DATA
+================================================================================
+✅ Loaded 119,846 rows
+   Period: 2024-11-05 15:00:00 to 2025-12-26 18:00:00
+   Duration: 416 days
+
+================================================================================
+STEP 1: MODEL INITIALIZATION
+================================================================================
+✅ Model initialized with 5-fold CV
+
+================================================================================
+STEP 2: TDA FEATURE EXTRACTION
+================================================================================
+
+🔬 Extracting TDA features...
+  Computing persistence diagrams...
+Computing TDA for 119787 windows...
+  Window 0/119787
+  Window 500/119787
+  Window 1000/119787
+  Window 1500/119787
+  Window 2000/119787
+  Window 2500/119787
+  Window 3000/119787
+  Window 3500/119787
+  Window 4000/119787
+  Window 4500/119787
+  Window 5000/119787
+  Window 5500/119787
+  Window 6000/119787
+  Window 6500/119787
+  Window 7000/119787
+  Window 7500/119787
+  Window 8000/119787
+  Window 8500/119787
+  Window 9000/119787
+  Window 9500/119787
+  Window 10000/119787
+  Window 10500/119787
+  Window 11000/119787
+  Window 11500/119787
+  Window 12000/119787
+  Window 12500/119787
+  Window 13000/119787
+  Window 13500/119787
+  Window 14000/119787
+  Window 14500/119787
+  Window 15000/119787
+  Window 15500/119787
+  Window 16000/119787
+  Window 16500/119787
+  Window 17000/119787
+  Window 17500/119787
+  Window 18000/119787
+  Window 18500/119787
+  Window 19000/119787
+  Window 19500/119787
+  Window 20000/119787
+  Window 20500/119787
+  Window 21000/119787
+  Window 21500/119787
+  Window 22000/119787
+  Window 22500/119787
+  Window 23000/119787
+  Window 23500/119787
+  Window 24000/119787
+  Window 24500/119787
+  Window 25000/119787
+  Window 25500/119787
+  Window 26000/119787
+  Window 26500/119787
+  Window 27000/119787
+  Window 27500/119787
+  Window 28000/119787
+  Window 28500/119787
+  Window 29000/119787
+  Window 29500/119787
+  Window 30000/119787
+  Window 30500/119787
+  Window 31000/119787
+  Window 31500/119787
+  Window 32000/119787
+  Window 32500/119787
+  Window 33000/119787
+  Window 33500/119787
+  Window 34000/119787
+  Window 34500/119787
+  Window 35000/119787
+  Window 35500/119787
+  Window 36000/119787
+  Window 36500/119787
+  Window 37000/119787
+  Window 37500/119787
+  Window 38000/119787
+  Window 38500/119787
+  Window 39000/119787
+  Window 39500/119787
+  Window 40000/119787
+  Window 40500/119787
+  Window 41000/119787
+  Window 41500/119787
+  Window 42000/119787
+  Window 42500/119787
+  Window 43000/119787
+  Window 43500/119787
+  Window 44000/119787
+  Window 44500/119787
+  Window 45000/119787
+  Window 45500/119787
+  Window 46000/119787
+  Window 46500/119787
+  Window 47000/119787
+  Window 47500/119787
+  Window 48000/119787
+  Window 48500/119787
+  Window 49000/119787
+  Window 49500/119787
+  Window 50000/119787
+  Window 50500/119787
+  Window 51000/119787
+  Window 51500/119787
+  Window 52000/119787
+  Window 52500/119787
+  Window 53000/119787
+  Window 53500/119787
+  Window 54000/119787
+  Window 54500/119787
+  Window 55000/119787
+  Window 55500/119787
+  Window 56000/119787
+  Window 56500/119787
+  Window 57000/119787
+  Window 57500/119787
+  Window 58000/119787
+  Window 58500/119787
+  Window 59000/119787
+  Window 59500/119787
+  Window 60000/119787
+  Window 60500/119787
+  Window 61000/119787
+  Window 61500/119787
+  Window 62000/119787
+  Window 62500/119787
+  Window 63000/119787
+  Window 63500/119787
+  Window 64000/119787
+  Window 64500/119787
+  Window 65000/119787
+  Window 65500/119787
+  Window 66000/119787
+  Window 66500/119787
+  Window 67000/119787
+  Window 67500/119787
+  Window 68000/119787
+  Window 68500/119787
+  Window 69000/119787
+  Window 69500/119787
+  Window 70000/119787
+  Window 70500/119787
+  Window 71000/119787
+  Window 71500/119787
+  Window 72000/119787
+  Window 72500/119787
+  Window 73000/119787
+  Window 73500/119787
+  Window 74000/119787
+  Window 74500/119787
+  Window 75000/119787
+  Window 75500/119787
+  Window 76000/119787
+  Window 76500/119787
+  Window 77000/119787
+  Window 77500/119787
+  Window 78000/119787
+  Window 78500/119787
+  Window 79000/119787
+  Window 79500/119787
+  Window 80000/119787
+  Window 80500/119787
+  Window 81000/119787
+  Window 81500/119787
+  Window 82000/119787
+  Window 82500/119787
+  Window 83000/119787
+  Window 83500/119787
+  Window 84000/119787
+  Window 84500/119787
+  Window 85000/119787
+  Window 85500/119787
+  Window 86000/119787
+  Window 86500/119787
+  Window 87000/119787
+  Window 87500/119787
+  Window 88000/119787
+  Window 88500/119787
+  Window 89000/119787
+  Window 89500/119787
+  Window 90000/119787
+  Window 90500/119787
+  Window 91000/119787
+  Window 91500/119787
+  Window 92000/119787
+  Window 92500/119787
+  Window 93000/119787
+  Window 93500/119787
+  Window 94000/119787
+  Window 94500/119787
+  Window 95000/119787
+  Window 95500/119787
+  Window 96000/119787
+  Window 96500/119787
+  Window 97000/119787
+  Window 97500/119787
+  Window 98000/119787
+  Window 98500/119787
+  Window 99000/119787
+  Window 99500/119787
+  Window 100000/119787
+  Window 100500/119787
+  Window 101000/119787
+  Window 101500/119787
+  Window 102000/119787
+  Window 102500/119787
+  Window 103000/119787
+  Window 103500/119787
+  Window 104000/119787
+  Window 104500/119787
+  Window 105000/119787
+  Window 105500/119787
+  Window 106000/119787
+  Window 106500/119787
+  Window 107000/119787
+  Window 107500/119787
+  Window 108000/119787
+  Window 108500/119787
+  Window 109000/119787
+  Window 109500/119787
+  Window 110000/119787
+  Window 110500/119787
+  Window 111000/119787
+  Window 111500/119787
+  Window 112000/119787
+  Window 112500/119787
+  Window 113000/119787
+  Window 113500/119787
+  Window 114000/119787
+  Window 114500/119787
+  Window 115000/119787
+  Window 115500/119787
+  Window 116000/119787
+  Window 116500/119787
+  Window 117000/119787
+  Window 117500/119787
+  Window 118000/119787
+  Window 118500/119787
+  Window 119000/119787
+  Window 119500/119787
+  Extracted 119787 TDA feature vectors
+✅ TDA features extracted: 119787 windows
+
+================================================================================
+STEP 3: MACHINE LEARNING FEATURES
+================================================================================
+
+📈 Creating ML features...
+  Created 51 features for 501 samples
+✅ ML features created: 501 samples, 51 features
+
+================================================================================
+STEP 4: DATASET PREPARATION
+================================================================================
+
+🎯 Preparing ML dataset (predicting 12 steps ahead)...
+  Features: 15
+  Samples: 489
+✅ Dataset ready: X=(489, 15), y=(489,)
+
+================================================================================
+STEP 5: K-FOLD CROSS-VALIDATION TRAINING
+================================================================================
+
+🤖 Training with 5-Fold Time Series CV...
+
+  Fold 1/5
+    Train: 84 samples, Val: 81 samples
+    Train MAE: $122.59, R²: -1.9917
+    Val MAE:   $128.07, R²: -1.7799
+
+  Fold 2/5
+    Train: 165 samples, Val: 81 samples
+    Train MAE: $0.27, R²: 1.0000
+    Val MAE:   $392.34, R²: -5.1886
+
+  Fold 3/5
+    Train: 246 samples, Val: 81 samples
+    Train MAE: $11.14, R²: 0.9955
+    Val MAE:   $559.07, R²: 0.2640
+
+  Fold 4/5
+    Train: 327 samples, Val: 81 samples
+    Train MAE: $29.74, R²: 0.9899
+    Val MAE:   $624.93, R²: -10.8248
+
+  Fold 5/5
+    Train: 408 samples, Val: 81 samples
+    Train MAE: $333.28, R²: 0.5706
+    Val MAE:   $680.88, R²: 0.0005
+
+📊 Cross-Validation Results:
+  Average Train MAE: $99.40 ± $124.66
+  Average Val MAE:   $477.06 ± $199.55
+  Average Train R²:  0.3129 ± 1.1639
+  Average Val R²:    -3.5058 ± 4.1445
+✅ K-Fold CV complete!
+
+================================================================================
+STEP 6: MODEL SAVING
+================================================================================
+
+💾 Model saved to: /notebooks/algo/models/tda_trump_model.pkl
+✅ Model saved to: /notebooks/algo/models/tda_trump_model.pkl
+
+================================================================================
+STEP 7: SAVING METRICS
+================================================================================
+✅ Metrics saved to: /notebooks/algo/results_trump/training_metrics.json
+
+================================================================================
+✅ TRAINING COMPLETE!
+================================================================================
+End time: 2025-12-27 03:23:11
+
+📊 Summary:
+  Dataset: Post-Trump (119,846 rows)
+  Period: 2024-11-05 to 2025-12-26
+  Average Val MAE:  $477.06
+  Average Val R²:   -3.5058
+
+🎯 Next step:
+  Run backtest: python backtest_trump.py
+
+✅ Training successful!
