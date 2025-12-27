@@ -103,6 +103,8 @@ class NBeatsEnhanced(nn.Module):
         self.lookback = lookback
         self.horizon = horizon
         self.n_correlation_features = n_correlation_features
+        self.n_stacks = n_stacks
+        self.n_blocks_per_stack = n_blocks_per_stack
         self.use_attention = use_attention
 
         # Correlation feature processor with attention
@@ -152,7 +154,8 @@ class NBeatsEnhanced(nn.Module):
             self.stacks.append(stack_blocks)
 
         # Final projection
-        self.forecast_head = nn.Linear(horizon * n_stacks, horizon)
+        total_forecasts = n_stacks * n_blocks_per_stack
+        self.forecast_head = nn.Linear(horizon * total_forecasts, horizon)
 
     def forward(self, x, correlation_features=None, exog_features=None):
         """
